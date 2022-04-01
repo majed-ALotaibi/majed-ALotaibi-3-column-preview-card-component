@@ -1,0 +1,112 @@
+
+
+//importing fonts 
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+//variables 
+
+$headerFontFamily :'Big Shoulders Display';
+$contentFontFamily:'Lexend Deca';
+$HeaderFontSize:3rem;
+$contentFontSize:0.9rem;
+$sedanOrangeColor:hsl(31, 77%, 52%);
+$suvsDarkCyan: hsl(184, 100%, 22%);
+$LuxueryVeryDarkCyan: hsl(179, 100%, 13%);
+$White: hsla(0, 0%, 100%, 0.75);//paragraphs
+$LightGray:hsl(0, 0%, 95%);//background, headings, buttons
+$BoxWidth:19rem;
+$Boxheight:28rem;
+
+@mixin boxtheme ($themeColor) {
+    
+    background-color: $themeColor;
+    width: $BoxWidth;
+    height: $Boxheight;
+    .container{
+        padding: 0rem 2.3rem;
+        position: relative;
+    }
+    h2{
+        font-size: $HeaderFontSize;
+        font-family: $headerFontFamily;
+        color: $LightGray; 
+        text-transform: uppercase;
+    }
+    p{
+        font-size: $contentFontSize;
+        font-family: $contentFontFamily;
+        color: $White;
+        line-height: 1.5rem;
+        
+    }.btn{
+        background-color: $LightGray;
+        border: 1px solid $LightGray;
+        color: $themeColor;
+        border-radius: 25px;
+        padding: .8rem 1.6rem;
+        transition: 0.3s all  ;
+        position: absolute;
+        top: 19.6rem;
+        
+    }.btn:hover{
+        color: $LightGray;
+        background-color: transparent;
+    }:nth-child(n+1){
+        margin-top: 1.2rem;
+    }
+
+   
+}
+
+//style 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    //width:100vw;
+    min-height: 100vh;
+    font-size: 15px;
+}
+.wrapper{
+   // margin: 2rem 0 2rem 0;
+   //margin: 2rem 0rem ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 0rem
+}
+.Sedans{
+@include boxtheme($sedanOrangeColor);
+border-radius: 10px 10px 0 0 ;
+}
+.SUVs{
+    @include boxtheme($suvsDarkCyan); 
+}
+.Luxury{
+    @include boxtheme($LuxueryVeryDarkCyan);
+    border-radius:  0 0 10px 10px;
+}
+
+
+@media only screen and (min-width: 850px) {
+    .wrapper{
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .Sedans{
+       
+        border-radius: 10px 0 0 10px ;
+        }
+       
+        .Luxury{
+          
+            border-radius:  0 10px 10px 0 ;
+        }
+
+  }

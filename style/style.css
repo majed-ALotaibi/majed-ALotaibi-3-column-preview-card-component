@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem 0rem;
+}
+
+.Sedans {
+  background-color: #e38826;
+  width: 19rem;
+  height: 28rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.Sedans .container {
+  padding: 0rem 2.3rem;
+  position: relative;
+}
+
+.Sedans h2 {
+  font-size: 3rem;
+  font-family: "Big Shoulders Display";
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.Sedans p {
+  font-size: 0.9rem;
+  font-family: "Lexend Deca";
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+}
+
+.Sedans .btn {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #e38826;
+  border-radius: 25px;
+  padding: .8rem 1.6rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  position: absolute;
+  top: 19.6rem;
+}
+
+.Sedans .btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.Sedans :nth-child(n+1) {
+  margin-top: 1.2rem;
+}
+
+.SUVs {
+  background-color: #006970;
+  width: 19rem;
+  height: 28rem;
+}
+
+.SUVs .container {
+  padding: 0rem 2.3rem;
+  position: relative;
+}
+
+.SUVs h2 {
+  font-size: 3rem;
+  font-family: "Big Shoulders Display";
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.SUVs p {
+  font-size: 0.9rem;
+  font-family: "Lexend Deca";
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+}
+
+.SUVs .btn {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #006970;
+  border-radius: 25px;
+  padding: .8rem 1.6rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  position: absolute;
+  top: 19.6rem;
+}
+
+.SUVs .btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.SUVs :nth-child(n+1) {
+  margin-top: 1.2rem;
+}
+
+.Luxury {
+  background-color: #004241;
+  width: 19rem;
+  height: 28rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.Luxury .container {
+  padding: 0rem 2.3rem;
+  position: relative;
+}
+
+.Luxury h2 {
+  font-size: 3rem;
+  font-family: "Big Shoulders Display";
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.Luxury p {
+  font-size: 0.9rem;
+  font-family: "Lexend Deca";
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+}
+
+.Luxury .btn {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #004241;
+  border-radius: 25px;
+  padding: .8rem 1.6rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  position: absolute;
+  top: 19.6rem;
+}
+
+.Luxury .btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.Luxury :nth-child(n+1) {
+  margin-top: 1.2rem;
+}
+
+@media only screen and (min-width: 850px) {
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+  }
+  .Sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .Luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
