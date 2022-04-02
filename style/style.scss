@@ -70,6 +70,7 @@ body{
     //width:100vw;
     min-height: 100vh;
     font-size: 15px;
+    background-color: $LightGray;
 }
 .wrapper{
    // margin: 2rem 0 2rem 0;
@@ -78,7 +79,9 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 1.2rem 0rem
+    padding: 1.2rem 0rem;
+    background-color: inherit;
+    
 }
 .Sedans{
 @include boxtheme($sedanOrangeColor);
